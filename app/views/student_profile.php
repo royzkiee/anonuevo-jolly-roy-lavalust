@@ -272,6 +272,7 @@
     <div class="nav-links">
         <a href="<?= site_url('student'); ?>" class="btn-home">← Home</a>
         <a href="<?= site_url('student/profile'); ?>" class="active">Student Profile</a>
+        <a href="<?= site_url('users'); ?>" class="btn-home">Users →</a>
     </div>
 </nav>
 

@@ -236,7 +236,8 @@
     </div>
     <div class="nav-links">
         <a href="<?= site_url('student'); ?>" class="active">Home</a>
-        <a href="<?= site_url('student/profile'); ?>" class="btn-profile">Student Profile →</a>
+        <a href="<?= site_url('student/profile'); ?>">Profile</a>
+        <a href="<?= site_url('users'); ?>" class="btn-profile">Users →</a>
     </div>
 </nav>
 
