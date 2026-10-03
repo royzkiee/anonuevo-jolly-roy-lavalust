@@ -24,3 +24,5 @@ runtime/*
 
 # OS
 Thumbs.db
+app/commands_old/
+

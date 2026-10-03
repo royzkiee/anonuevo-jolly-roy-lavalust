@@ -561,20 +561,22 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 
 <!-- NAV -->
 <nav>
-    <a class="nav-logo" href="#">
+    <a class="nav-logo" href="/">
         <div class="flame">🔥</div>
         LavaLust
     </a>
     <div class="nav-links">
+        <a href="/products">Lab 5 (Products)</a>
+        <a href="/api/products" target="_blank">Lab 6 (API)</a>
         <a href="https://lavalust.netlify.app/docs/" target="_blank">Docs</a>
         <a href="https://github.com/ronmarasigan/LavaLust" target="_blank">GitHub</a>
-        <a href="https://lavalust.netlify.app/docs/" target="_blank" class="btn-nav">Get Started →</a>
+        <a href="/products" class="btn-nav">Open Lab 5 →</a>
     </div>
 </nav>
 
 <!-- HERO -->
 <div class="hero wrap">
-    <div class="badge">v<?php echo config_item('VERSION') ?? '4.x'; ?> — Now Available</div>
+    <div class="badge">v<?php echo config_item('VERSION') ?? '4.x'; ?> — Web Development 2</div>
     <h1>
         <span class="name-first">Jolly Roy</span><br>
         <span class="name-last">Añonuevo</span>
@@ -583,11 +585,17 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         A lightweight, expressive PHP MVC framework built for developers who want structure without the bloat.
     </p>
     <div class="hero-actions">
-        <a href="https://lavalust.netlify.app/docs/" target="_blank" class="btn btn-primary">
-            Read the Docs
+        <a href="/products" class="btn btn-primary">
+            📦 Open Lab 5 (Products)
         </a>
-        <a href="https://github.com/ronmarasigan/LavaLust" target="_blank" class="btn btn-ghost">
-            View on GitHub
+        <a href="/api/products" target="_blank" class="btn btn-ghost" style="border-color: rgba(221,72,20,0.6); color: #f4f4f5;">
+            ⚡ Lab 6: REST API
+        </a>
+        <a href="/login" class="btn btn-ghost">
+            🔑 Login
+        </a>
+        <a href="https://lavalust.netlify.app/docs/" target="_blank" class="btn btn-ghost">
+            Read Docs
         </a>
     </div>
 </div>
