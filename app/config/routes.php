@@ -92,6 +92,13 @@ $router->post('api/products', 'ProductApiController::store');
 $router->put('api/products/{id}', 'ProductApiController::update');
 $router->patch('api/products/{id}', 'ProductApiController::update');
 $router->delete('api/products/{id}', 'ProductApiController::destroy');
+// Users CRUD API
+$router->get('api/users', 'UserApiController::index');
+$router->get('api/users/{id}', 'UserApiController::show');
+$router->post('api/users', 'UserApiController::store');
+$router->put('api/users/{id}', 'UserApiController::update');
+$router->patch('api/users/{id}', 'UserApiController::update');
+$router->delete('api/users/{id}', 'UserApiController::destroy');
 
 // API Tester Default Aliases
 $router->post('api/login', 'AuthApiController::login');
@@ -101,7 +108,9 @@ $router->get('api/profile', 'AuthApiController::me');
 $router->get('api/list', 'ProductApiController::index');
 $router->post('api/create', 'ProductApiController::store');
 $router->put('api/update/{id}', 'ProductApiController::update');
+$router->post('api/update/{id}', 'ProductApiController::update');
 $router->delete('api/delete/{id}', 'ProductApiController::destroy');
+$router->post('api/delete/{id}', 'ProductApiController::destroy');
 
 // Direct Root Aliases for API Tester (when Base URL is http://127.0.0.1:3000)
 $router->post('refresh', 'AuthApiController::refresh');
@@ -109,4 +118,11 @@ $router->get('profile', 'AuthApiController::me');
 $router->get('list', 'ProductApiController::index');
 $router->post('create', 'ProductApiController::store');
 $router->put('update/{id}', 'ProductApiController::update');
+$router->post('update/{id}', 'ProductApiController::update');
 $router->delete('delete/{id}', 'ProductApiController::destroy');
+$router->post('delete/{id}', 'ProductApiController::destroy');
+
+// Dedicated Users and Profile Aliases for API Tester
+$router->get('users-list', 'UserApiController::index');
+$router->get('api/users-list', 'UserApiController::index');
+$router->get('api/student/profile', 'AuthApiController::me');

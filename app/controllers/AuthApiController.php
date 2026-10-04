@@ -118,12 +118,29 @@ class AuthApiController extends Controller
             $this->api->respond_error('User not found.', 404);
         }
 
+        $studentProfile = [
+            'student_id' => 'MCC2024-00100',
+            'name'       => 'Jolly Roy Añonuevo',
+            'course'     => 'Bachelor of Science in Information Technology',
+            'year'       => '3rd Year',
+            'section'    => 'BSIT-3-F2',
+            'email'      => 'jollyroyp.anonuevo@mcc.edu.ph',
+            'address'    => 'Bangkatan, Baco, Oriental Mindoro',
+            'contact'    => '09677504593',
+            'skills'     => 'Playing Games',
+            'hobbies'    => 'Studying Different Kinds of Motorcycle',
+            'bio'        => "Hey! I'm Jolly Roy, a 3rd-year IT major at MinSU. Tech student by day, gamer by night, and full-time motorcycle nerd in between.",
+            'tiktok'     => '@royyzxxx',
+            'facebook'   => 'Jolly Roy Añonuevo',
+        ];
+
         $this->api->respond([
-            'status' => 'success',
-            'user'   => [
+            'status'  => 'success',
+            'user'    => [
                 'id'       => $account['id'],
                 'username' => $account['username']
-            ]
+            ],
+            'student' => $studentProfile
         ], 200);
     }
 
